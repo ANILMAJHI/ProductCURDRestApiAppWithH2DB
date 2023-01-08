@@ -22,6 +22,7 @@ public final class ProductController {
 
 	@PostMapping("/save")
 	public Product saveProduct(@RequestBody Product product) {
+		System.out.println("jenkins auto reloaded...");
 		return service.saveProduct(product);
 	}
 
